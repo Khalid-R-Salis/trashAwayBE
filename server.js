@@ -3,7 +3,7 @@ const cors = require('cors');
 const chatbotRoutes = require('./routes/chatbot');
 
 const app = express();
-const PORT = 5000; 
+const PORT = process.env.PORT || 5000; // Update this line
 
 // Middleware
 app.use(cors({ origin: 'http://127.0.0.1:5173' })); // Allow requests from your frontend
