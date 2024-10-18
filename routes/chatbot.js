@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
     botResponse = 'adding 2 and 2 i.e 2+2 = 4, do you need break down?';
   } 
   else {
-    botResponse = `You said: ${message}`; // Default response
+    botResponse = `You said: ${message}`;
   }
 
   res.json({ message: botResponse });
@@ -28,3 +28,5 @@ router.post('/', (req, res) => {
 
 
 module.exports = router;
+
+
