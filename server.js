@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 
 
 // Middleware
-app.use(cors({ origin: 'https://trash-away.vercel.app/support' })); // Allow requests from your frontend
+app.use(cors({ origin: 'https://trash-away.vercel.app' }));
 app.use(express.json()); 
 
 // Routes
