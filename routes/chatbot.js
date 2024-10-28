@@ -7,7 +7,6 @@ router.post('/', (req, res) => {
 
   let botResponse;
 
-  // Simple keyword-based responses
   if (message.toLowerCase().includes('hello')) {
     botResponse = 'Hello! I am Khalid AI How can I assist you today?';
   } else if (message.toLowerCase().includes('help')) {
